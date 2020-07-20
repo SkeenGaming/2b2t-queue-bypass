@@ -1,7 +1,7 @@
 # 2b2t Queue Bot with Discord Implementation
 A discord implementation of the popular proxy to wait out 2b2t.org's way too long queue.
 
-![](https://i.imgur.com/65dvy5o.jpg) 
+![](https://imgur.com/a/nwy8KvI) 
 
 # How to install
 1. Download node.js and install it. On non-windows platforms, you also need npm.
