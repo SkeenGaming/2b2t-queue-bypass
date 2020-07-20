@@ -1,0 +1,14 @@
+{
+   "name": "2l2w",
+   "version": "1.1.0",
+   "description": "2b2w discord bridge",
+   "main": "discordBot.js",
+   "author": "",
+   "license": "ISC",
+   "dependencies": {
+      "discord.js": "^11.5.1",
+      "sleep": "^6.1.0",
+      "moment": "^2.24.0",
+      "node-schedule": "^1.3.2"
+   }
+}
