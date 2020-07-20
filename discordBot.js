@@ -29,7 +29,7 @@ function update() {
         queueData = "error"
     });
     var numberplace = parseInt(queueData.place, 10)
-    if (numberplace <= 553) {
+    if (numberplace <= 20) {
         client.channels.get("734879499203772429").send({
             embed: {
                 color: 3447003,
