@@ -150,29 +150,6 @@ client.on('message', msg => {
             }
         });
     }
-    var numberplace = parseInt(queueData.place, 10)
-    if (numberplace <= 553) {
-        msg.channel.send({
-            embed: {
-                color: 3447003,
-                author: {
-                    name : client.user.username,
-                    icon_url : client.user.avatarURL
-                },
-                fields: [{
-                    name: "CRITICAL QUEUE UPDATE",
-                    value: "Place in queue has reached 20, log on now. @everyone"
-                }
-            ],
-            timestamp: new Date(),
-            footer: {
-                icon_url: client.user.avatarURL,
-                text: "Author: NateWeav"
-            }
-            }
-        })
-    }
-    
 })
 
 
