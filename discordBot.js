@@ -28,28 +28,6 @@ function update() {
     }).on("error", (err) => {
         queueData = "error"
     });
-    var numberplace = parseInt(queueData.place, 10)
-    if (numberplace <= 20) {
-        client.channels.get("734879499203772429").send({
-            embed: {
-                color: 3447003,
-                author: {
-                    name : client.user.username,
-                    icon_url : client.user.avatarURL
-                },
-                fields: [{
-                    name: "CRITICAL QUEUE UPDATE",
-                    value: "Place in queue has reached 20, log on now. @everyone"
-                }
-            ],
-            timestamp: new Date(),
-            footer: {
-                icon_url: client.user.avatarURL,
-                text: "Author: NateWeav"
-            }
-            }
-        })
-    }
     setTimeout(update, 5 * 1000);
     setTimeout(timedDiscordUpdate, 30 * 1000);
 }
@@ -64,6 +42,28 @@ function setDiscordActivity(string) {
 
 function timedDiscordUpdate() {
     setDiscordActivity("Queue Position: " + queueData.place)
+    var numberplace = parseint(queueData.place, 10)
+    if (numberplace <=20) {
+        client.channels.get("734879499203772429").send({
+            embed: {
+                color: 3447003,
+                author: {
+                    name: client.user.username,
+                    icon_url: client.user.avatarURL
+                },
+                fields: [{
+                    name: "CRITICAL QUEUE UPDATE",
+                    value: "Place in queue has reached 20, log on now. @everyone"
+                }
+            ],
+            timestamp: new Date(),
+            footer: {
+                icon_url: client.user.avaterURL,
+                text: "Author: Nateweav"
+            }
+            }
+        })
+    }
 }
 // Configure logger settings
 
