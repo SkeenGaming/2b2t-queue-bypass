@@ -42,7 +42,7 @@ function setDiscordActivity(string) {
 
 function timedDiscordUpdate() {
     setDiscordActivity("Queue Position: " + queueData.place)
-    var numberplace = parseint(queueData.place, 10)
+    var numberplace = parseInt(queueData.place, 10)
     if (numberplace <=20) {
         client.channels.get("734879499203772429").send({
             embed: {
