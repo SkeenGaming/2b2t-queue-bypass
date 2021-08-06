@@ -21,7 +21,7 @@ Donations are what helps me keep developing this. They keep me motivated, if you
 
 If you donate enough I'll tell you how to bypass the queue...
 
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/natetweaver)
+To donate Dm An4t0x#5364
 
 # How to use
 1. Read the code to ensure i'm not stealing your credentials. i'm not, but you shouldn't take my word for it. If you don't know how to read it, downloading stuff off the internet and giving it your password is probably a bad idea anyway.
